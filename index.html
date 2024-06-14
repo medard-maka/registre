@@ -3,12 +3,12 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Inscription</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Connexion</title>
+   
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,19 +18,15 @@
           
           form {
             background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            width: 400px;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
           }
           
           h4 {
             text-align: center;
-            font-size: 24px;
-            font-weight: 600;
             margin-top: 0;
-            margin-bottom: 30px;
-            color: #333;
           }
           
           input[type=text], input[type=password] {
@@ -41,11 +37,10 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-            font-size: 16px;
           }
           
           button {
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -53,22 +48,43 @@
             border-radius: 4px;
             cursor: pointer;
             width: 100%;
-            font-size: 16px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
           }
           
           button:hover {
-            background-color: #0056b3;
+            background-color: #45a049;
+          }
+          
+          p {
+            text-align: center;
+            margin-bottom: 0;
+          }
+          
+          a {
+            color: #4CAF50;
+            text-decoration: none;
+          }
+          
+          a:hover {
+            color: #45a049;
           }
     </style>
 </head>
 <body>
-    <form action="register.php" method="post">
-    <h4>Veillez remplir ce formulaure pour s'inscrire</h4>
+    <form action="login.php" method="post">
+        <h4>Veillez remplir ce formulaire pour vous connecter</h4>
         <input type="text" name="username" placeholder="Nom d'utilisateur" required>
         <input type="password" name="password" placeholder="Mot de passe" required>
-        <button type="submit">S'inscrire</button>
+        <button type="submit">Se connecter</button>
+        
+
+<br>
+<p>Si vous n'avez un compte veillez cliquer sur ce lien:<a href="new.php">Cliquer ici</a></p>
+
+        
     </form>
+    
+
+    
+
 </body>
 </html>
